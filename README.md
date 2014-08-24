@@ -103,7 +103,7 @@ The script is well documented. It basically follow the 5 steps given by the proj
               79	fBodyBodyGyroJerkMag-std()
               80	Subject
               81	Activity   
-
+	
 3. Uses descriptive activity names to name the activities in the data set
 	- For 'descriptive', I simply follow the definition as below:
 		- All lower case when possible
@@ -111,12 +111,12 @@ The script is well documented. It basically follow the 5 steps given by the proj
 		- Not duplicated
 		- Descriptive
 	- For activity name, I removed '_' and use low cases. 
-	    
+	
 4. Appropriately labels the data set with descriptive variable names. 
 	- Similar to step 3. For feature names, I removed '_', '(' and ')' etc. and use low cases. 
 	- I did not change "t" to "time" or "acc" to "acceleration" etc. since I don't think that's necessary to increase readability. 
-
+	
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 	- Use melt to melt data and set 'subject' and 'activity' as id. Then use dcast to get mean.
-
+	
 6. Finally, save tidy data set into file using write.table.
