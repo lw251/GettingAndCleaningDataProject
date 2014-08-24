@@ -1,12 +1,12 @@
-==================================================================
-Getting and Cleaning Data Course Project README
-==================================================================
+# Getting and Cleaning Data Course Project README
 
-The submission includes :
-		- README.txt (this file)
+
+The submission includes
+
+		- README.md (this file)
 		- CodeBook.md 
 		- run_analysis.R
-		- tidyData.txt
+		- tidyData.txt (uploaded separately)
 
 To run the script, put it under the working directory of R. Assume data set folder ("UCI HAR Dataset") is also under working directory.
 
@@ -19,7 +19,7 @@ The script is well documented. It basically follow the 5 steps given by the proj
 	
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 		I used grep to select features. 81 features are selected including 'Subject' and 'Activity'. Here is the list.
-   ======================================================================
+
 		1   tBodyAcc-mean()-X
 		2	tBodyAcc-mean()-Y
 		3	tBodyAcc-mean()-Z
@@ -100,8 +100,7 @@ The script is well documented. It basically follow the 5 steps given by the proj
 		78	fBodyBodyGyroMag-std()
 		79	fBodyBodyGyroJerkMag-std()
 		80	Subject
-		81	Activity
-   ======================================================================
+		81	Activity   
 
 3. Uses descriptive activity names to name the activities in the data set
 		For 'descriptive', I simply follow the definition 
@@ -114,7 +113,7 @@ The script is well documented. It basically follow the 5 steps given by the proj
 4. Appropriately labels the data set with descriptive variable names. 
 		Similar to step 3. 
 		For feature names, I removed '_', '(' and ')' etc. and use low cases. 
-		I did not change t to time or "acc" to "acceleration" etc. since I don't think that's necessary to increase readability. 
+		I did not change "t" to "time" or "acc" to "acceleration" etc. since I don't think that's necessary to increase readability. 
 
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 		Use melt to melt data and set 'subject' and 'activity' as id. Then use dcast to get mean.
