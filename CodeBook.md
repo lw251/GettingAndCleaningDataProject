@@ -8,18 +8,18 @@
 ## Code book
 The tidy data set contains 180 measurements and each measurement has 81 features.
 
-- subject
-		From 1 to 30.  
+- #####subject
+	- From 1 to 30.  
 		HAR database built from the recordings of 30 subjects performing activities of daily living (ADL).
 		
-- activity
-		Correspond to 6 ADLs.
-		1. "walking"
-		2. "walkingupstairs"
-		3. "walkingdownstairs"
-		4. "sitting"
-		5. "standing"
-		6. "laying"
+- #####activity
+	- Correspond to 6 ADLs.
+		- "walking"
+		- "walkingupstairs"
+		- "walkingdownstairs"
+		- "sitting"
+		- "standing"
+		- "laying"
 	
 We have 30 subjects and 6 activities, so totally 30 * 6 = 180 unique subject-activity pairs. 
 
@@ -108,4 +108,3 @@ Details about raw features such as value range and units etc. are described in H
 		fbodybodyaccjerkmagstd		fBodyBodyAccJerkMag-std()
 		fbodybodygyromagstd		fBodyBodyGyroMag-std()
 		fbodybodygyrojerkmagstd		fBodyBodyGyroJerkMag-std()
-
