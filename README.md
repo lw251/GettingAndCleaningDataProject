@@ -21,6 +21,7 @@ The script is well documented. It basically follow the 5 steps given by the proj
 		
    - I used grep to select features. 81 features are selected including 'Subject' and 'Activity'. 
    - Here is the list.
+   
               1	tBodyAcc-mean()-X
               2	tBodyAcc-mean()-Y
               3	tBodyAcc-mean()-Z
